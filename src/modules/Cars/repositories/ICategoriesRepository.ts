@@ -1,4 +1,4 @@
-import { Category } from "src/model/category";
+import { Category } from "../model/Category";
 
 /**
  * DTO => Data Transfer Object

@@ -1,3 +1,4 @@
+import { Specification } from "../model/Specification";
 import { ICreateCategoryDTO } from "./ICategoriesRepository";
 
 interface ICreateSpecificationDTO {
@@ -8,6 +9,7 @@ interface ICreateSpecificationDTO {
 interface ISpecificationsRepository {
 
   create({ description, name }: ICreateCategoryDTO): void;
+  findByName(name: string): Specification;
 }
 
 export {ISpecificationsRepository, ICreateSpecificationDTO};
