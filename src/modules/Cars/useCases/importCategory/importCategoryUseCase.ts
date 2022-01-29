@@ -1,7 +1,6 @@
 import { parse } from "csv-parse";
 import fs from "fs";
 import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
-import { ImportCategoryController } from "./importCategoryController";
 
 interface IImportCategory {
   name: string;
@@ -32,6 +31,8 @@ class ImportCategoryUseCase {
         });
       })
       .on("end", () => {
+        // unlink remove o arquivo depois de upload de arquivo na pasta tmp
+        fs.promises.unlink(file.path)
         resolve(categories);
       })
       .on("error", (err) => {
