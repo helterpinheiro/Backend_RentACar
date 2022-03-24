@@ -13,6 +13,12 @@ class User {
   @Column()
   email: string;
 
+	@Column()
+	isAdmin: boolean;
+
+	@Column()
+	avatar: string;
+
   @Column()
   password: string;
 
