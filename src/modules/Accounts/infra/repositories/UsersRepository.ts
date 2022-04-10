@@ -3,10 +3,10 @@ import { getRepository, Repository } from "typeorm";
 
 //Repository and Interface
 import { ICreateUserDTO } from "../../dtos/ICreateUserDTO";
-import { IUserRepository } from "../IUserRepository";
+import { IUserRepository } from "../../repositories/IUserRepository";
 
 //Entity
-import { User } from '../../entities/User'
+import { User } from '../../infra/typeorm/entities/User'
 
 
 class UsersRepository implements IUserRepository {
