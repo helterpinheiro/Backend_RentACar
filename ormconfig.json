@@ -7,10 +7,10 @@
   "database": "rentx",
   "migrations": ["./src/database/migrations/*.ts"],
   "entities": [
-    "./src/modules/Cars/entities/*.ts", 
-    "./src/modules/Accounts/entities/*.ts"
+    "./src/modules/Cars/infra/typeorm/entities/*.ts", 
+    "./src/modules/Accounts/infra/typeorm/entities/*.ts"
   ], 
   "cli": {
-    "migrationsDir": "./src/database/migrations"
+    "migrationsDir": "./src/shared/infra/database/migrations"
   }
 }
