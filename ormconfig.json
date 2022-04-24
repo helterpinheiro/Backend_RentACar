@@ -5,7 +5,7 @@
   "username": "docker",
   "password": "ignite",
   "database": "rentx",
-  "migrations": ["./src/database/migrations/*.ts"],
+  "migrations": ["./src/shared/infra/database/migrations/*.ts"],
   "entities": [
     "./src/modules/Cars/infra/typeorm/entities/*.ts", 
     "./src/modules/Accounts/infra/typeorm/entities/*.ts"
